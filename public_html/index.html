@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordi Lazo - Portfolio</title>
+    <meta name="description" content="On this website you can see my portfolio, the computer skills I have and the projects I have developed.">
+    <link rel="icon" href="/images/lazo_logo_browser.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Jordi Lazo</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About me</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I am<br><span>Jordi Lazo</span></h2>
+            <h3><br>I am currently studying the 3rd<br>year of Computer Engineering<br>at 
+                the <a href="http://www.udl.es/ca/" target="_blank"><u>University of Lleida</u></a></p></h3><br>
+                <a href="#about" class="btn">About me</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3><i>Never stop learning because life never stops teaching, this phrase defines my way of seeing life.</i></h3>
+                <p>I am Jordi Lazo, I am currently studying the degree of Computer Engineering at 
+                    the University of Lleida. My knowledge that I have and I am still learning are: Wordpress, JAVA, 
+                    C++, HTML, CSS, JAVASCRIPT and sales management by AMAZON and EBAY.</p>
+            </div>
+            <div class="w50">
+                <img src="/images/2.png" class="img" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Services</h2>
+            <p> What can I do for you?</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <i class="fas fa-laptop-code fa-10x"></i>
+                <h2>Web development</h2>
+                <p>I have developed several web pages in wordpress, html, css, javascript.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fas fa-file-code fa-10x"></i>
+                <h2>Programming</h2>
+                <p>I have programming knowledge in JAVA, <br>C++ and Python.</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fas fa-chart-bar fa-10x"></i>
+                <h2>Product Management</h2>
+                <p>I have worked in companies managing their products in Amazon and eBay.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="portfolio">
+        <div class="heading">
+            <h2>Portfolio</h2>
+            <p>View some of my recent work</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="/images/web_develop.jpg">
+                <p>I have developed 3 web pages in wordpress, using Hestia and Phlox themes and 
+                also using the Elementor plugin and I also applied the WooCommerce tooling in one of these websites.</p>
+            </div>
+            <div class="workBx">
+                <img src="/images/programming.jpg">
+                <p>In my university I study and do work related to programming.
+                I look forward to collaborating with you on a project.</p>
+            </div>
+            <div class="workBx">
+                <img src="images/product_manager.jpg">
+                <p>Due to my experience in online sales I can manage a products portfolio on online platforms such as 
+                Ebay and Amazon among others. I specialize in sales in the Amazon Seller Central platform.</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact me</h2>
+            <p>Let's work together</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+                    <!--
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Carrer de Jaume II, 69,<br>25001 Lleida<br>Spain</p>
+                        </div>
+                    </div>
+                    -->
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>(+34) 675 425 843</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>jlazo@jordilazo.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form action="contact_form.php" method="post">
+                    <h3>Contact form</h3>
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <input type="subject" name="subject" placeholder="Enter your subject">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>Copyrigth © 2020 Jordi Lazo. All Right Reserved.</p>
+    </div>
+    <div class="social-bar">
+        <a a href="https://www.facebook.com/jordilazo" target="_blank" class="icon-social icon-facebook"><i class="fab fa-facebook"></i></a>
+        <a a href="https://www.instagram.com/jordi.lazo/" target="_blank" class="icon-social icon-instagram"><i class="fab fa-instagram" ></i></a>
+        <a a href="https://www.linkedin.com/in/jordi-lazo-65a74710b/" target="_blank" class="icon-social icon-linkedin"><i class="fab fa-linkedin"></i></a>
+        <a a href="https://github.com/JordiLazo" target="_blank" class="icon-social icon-github"><i class="fab fa-github" ></i></a>
+    </div>
+    
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0 );
+    });
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active')
+        menu.classList.toggle('active')
+    }
+    </script>
+</body>
+</html>
