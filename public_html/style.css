@@ -10,6 +10,10 @@
 section{
     padding: 100px;
 }
+li:hover {
+    background-color: #A9A9A9;
+}
+
 .banner{
     position: relative;
     min-height: 100vh;
@@ -174,7 +178,7 @@ img{
 }
 
 .contact{
-    background: #111;
+    background: #fff;
 }
 .formBx{
     min-width: 60%;
@@ -184,7 +188,7 @@ img{
     flex-direction: column;
 }
 .formBx form h3, .contactInfo h3{
-    color: #fff;
+    color: #111;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -226,7 +230,7 @@ img{
 .contactInfoBx .box .icon{
     min-width: 40px;
     padding-top: 4px;
-    color: #fff;
+    color: #111;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -236,7 +240,7 @@ img{
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: #fff;
+    color: #111;
     flex-direction: column;
     font-weight: 300;
 }
